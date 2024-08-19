@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+      <title>Tran Manh Hung</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="Tạo giao diện giới thiệu bản thân, môn học và danh sách bài tập">
+        
+    <style>
+        * 
+        {
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family:'Times New Roman', Times, serif;
+        }
+
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 30px;
+          color: white;
+        }
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type:circle;
+          padding: 0;
+          font-size: medium;
+          line-height: 2;
+        }
+
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 300px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+          font-size: 20px;
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height:auto;
+          }
+        }
+        p{
+          font-size: larger;
+        }
+        h1{
+          font-size: 20px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h2>Tổng quan về Trần Mạnh Hùng</h2>
+    <p>Họ và tên: Trần Mạnh Hùng</p>
+    <p>Tuổi: 20 tuổi</p>
+    <p>Quê Quán: Hà Nam</p>
+    <P>Tạm trú: Biên Hòa - Đồng Nai</P>
+    <p>Đang học tập tại Trường đại học Công nghệ Đồng Nai.</p>
+    <header>
+      <h2>Trần Mạnh Hùng</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">Độc Lập</a></li>
+          <li><a href="#">Tự Do</a></li>
+          <li><a href="#">Hành Phúc</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>Những môn đã từng học qua</h1>
+        <p>Cơ sở lâp trình</p>
+        <p>Cấu trúc dữ liệu và giải thuật</p>
+        <p>Cở sở dữ liệu</p>
+        <p>Lập trình hướng đối tượng</p>
+        <p>Thiết kế hệ thống mạng</p>
+        <p>........</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>End</p>
+    </footer>
+
+  </body>
+</html>
